@@ -1,0 +1,12 @@
+public final class Slime extends Character{
+    public Slime(String name,int hp){
+        this.name = name;
+        this.hp = hp;
+    }
+    @Override
+    public void attack(Character target){
+       System.out.println("は体当たり攻撃！" + target.name + "に" + hp + "のダメージを与えた！");
+       target.hp = target.hp - hp;
+    }
+
+}
